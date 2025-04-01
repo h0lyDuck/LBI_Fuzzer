@@ -1,0 +1,8 @@
+target_binary/p_test
+target_binary/tenda_ac9/fuzz_output/*
+target_binary/tenda_ac9/httpd_81_patch.*
+target_binary/tenda_ac9/httpd_81_temp.*
+target_binary/tenda_ac9/httpd_81.*
+target_binary/tenda_ac9/telnet.py
+parameter_analyer/parameter_analyer_with_key.py
+.vscode/
