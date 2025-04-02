@@ -1,0 +1,2 @@
+networkx==3.2.1
+pwntools==4.13.1
