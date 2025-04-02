@@ -1,17 +1,12 @@
 import socket
-import requests
 import threading
 import queue
 import json
 import networkx as nx
-import math
-import matplotlib.pyplot as plt
-import networkx.algorithms.dag as dag
 import time
 import os
 import tqdm
 from string import Template
-from pprint import pprint
 from rich.live import Live
 from rich.panel import Panel
 from rich.text import Text
@@ -151,8 +146,6 @@ class Fuzzer:
                 )
 
         str_fuzz_library += self.fuzzer_config["const_str_list_in_strcmp"]
-        # pprint(self.fuzzer_config["cf_monitored_func"])
-        # print(self.stub_point_to_basic_block_map)
 
     # def mutate_seed(self, seed: Seed, score):
     #     new_seed = seed.copy()

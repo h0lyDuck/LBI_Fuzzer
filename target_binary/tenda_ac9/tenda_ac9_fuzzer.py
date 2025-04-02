@@ -1,6 +1,5 @@
 import sys
 import os
-from headless_ida import HeadlessIda
 
 # 将../../ 目录添加到 sys.path 中，便于后续导入patcher模块
 current_dir = os.path.dirname(os.path.abspath(__file__))

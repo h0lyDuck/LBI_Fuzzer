@@ -17,7 +17,6 @@ import shutil
 import networkx as nx
 import json
 import os
-import copy
 from enum import Enum, auto
 
 
