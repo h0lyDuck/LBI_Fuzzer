@@ -4,6 +4,8 @@
 
 基于langchain框架实现rag分析，需要的python库在文件夹中的requirements.txt中。
 
+需自行填入apikey以及api_url_base
+
 ## patcher
 
 基于idapython实现桩点插入，因此需要ida支持，其余需要的python库在文件夹中的requirements.txt中。

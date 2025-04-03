@@ -1,0 +1,863 @@
+[
+    {
+        "method": "GET",
+        "url": "goform/WifiAntijamGet",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/WifiAntijamSet",
+        "parameters": [
+            "WifiAntijamEn"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/GetSySLogCfg",
+        "parameters": []
+    },
+    {
+        "method": "GET",
+        "url": "cgi-bin/DownloadLog/syslog.tar",
+        "parameters": []
+    },
+    {
+        "method": "GET",
+        "url": "goform/GetNetControlList",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/SetNetControlList",
+        "parameters": [
+            "list"
+        ]
+    },
+    {
+        "method": "POST",
+        "url": "goform/SetOnlineDevName",
+        "parameters": [
+            "mac",
+            "devName"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/GetUsbCfg",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/setUsbUnload",
+        "parameters": [
+            "deviceName"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/GetLEDCfg",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/SetLEDCfg",
+        "parameters": [
+            "ledType",
+            "time",
+            "ledCloseType"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/AdvGetLanIp",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/AdvSetLanip",
+        "parameters": [
+            "lanIp",
+            "lanMask",
+            "dhcpEn",
+            "startIp",
+            "endIp",
+            "leaseTime",
+            "lanDnsAuto",
+            "lanDns1",
+            "lanDns2"
+        ]
+    },
+    {
+        "method": "POST",
+        "url": "goform/delWifiMacFilter",
+        "parameters": [
+            "index"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/initWifiMacFilter",
+        "parameters": []
+    },
+    {
+        "method": "GET",
+        "url": "goform/GetSystemStatus",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/InsertWhite",
+        "parameters": [
+            "whiteFlag",
+            "url"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/GetVirtualServerCfg",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/SetVirtualServerCfg",
+        "parameters": [
+            {
+                "name": "list",
+                "description": "Comma-separated list of IP, input port, output port, and protocol (0 for TCP&UDP, 1 for TCP, 2 for UDP), separated by '~' for multiple entries."
+            }
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/cloudv2",
+        "parameters": [
+            "module",
+            "opt",
+            "rand"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/SysToolGetUpgrade",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/setNotUpgrade",
+        "parameters": [
+            "action",
+            "newVersion"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/GetSambaCfg",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/SetSambaCfg",
+        "parameters": [
+            "fileCode",
+            "password",
+            "premitEn",
+            "guestpwd",
+            "guestuser",
+            "guestaccess",
+            "internetPort"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/GetDDNSCfg",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/SetDDNSCfg",
+        "parameters": [
+            "ddnsEn",
+            "serverName",
+            "ddnsUser",
+            "ddnsPwd",
+            "ddnsDomain"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/getPptpOnlineClient",
+        "parameters": []
+    },
+    {
+        "method": "GET",
+        "url": "goform/cloudv2?module=manage&opt=querybasic&rand=",
+        "parameters": []
+    },
+    {
+        "method": "GET",
+        "url": "goform/cloudv2?module=wansta&opt=query&rand=",
+        "parameters": []
+    },
+    {
+        "method": "GET",
+        "url": "goform/cloudv2?module=manage&opt=queryaccount&rand=",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/cloudv2?module=manage&opt=setbasic&rand=",
+        "parameters": [
+            "enable"
+        ]
+    },
+    {
+        "method": "POST",
+        "url": "goform/cloudv2?module=manage&opt=setaccount&rand=",
+        "parameters": [
+            "list"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/GetStaticRouteCfg",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/SetStaticRouteCfg",
+        "parameters": [
+            "list"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/WifiApScan",
+        "parameters": []
+    },
+    {
+        "method": "GET",
+        "url": "goform/WifiExtraGet",
+        "parameters": []
+    },
+    {
+        "method": "GET",
+        "url": "goform/SysToolReboot",
+        "parameters": []
+    },
+    {
+        "method": "GET",
+        "url": "goform/getMacFilterCfg",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/setMacFilterCfg",
+        "parameters": [
+            {
+                "name": "macFilterType",
+                "type": "string"
+            },
+            {
+                "name": "deviceList",
+                "type": "string"
+            }
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/GetIpMacBind",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/SetIpMacBind",
+        "parameters": [
+            "list",
+            "bindnum"
+        ]
+    },
+    {
+        "method": "POST",
+        "url": "goform/SetOnlineDevName",
+        "parameters": [
+            "mac",
+            "devName"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/WifiRadioGet",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/WifiRadioSet",
+        "parameters": [
+            "wrlRadio"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/getSyncAccount",
+        "parameters": []
+    },
+    {
+        "method": "GET",
+        "url": "goform/getProduct",
+        "parameters": []
+    },
+    {
+        "method": "GET",
+        "url": "goform/fast_setting_get",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/fast_setting_internet_set",
+        "parameters": [
+            "netWanType",
+            "cloneType",
+            "mac"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/getWanConnectStatus",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/fast_setting_wifi_set",
+        "parameters": [
+            "ssid",
+            "wrlPassword",
+            "power",
+            "timeZone",
+            "loginPwd"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/GetFirewallCfg",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/SetFirewallCfg",
+        "parameters": [
+            {
+                "name": "firewallEn",
+                "value": "Concatenated string of button states (e.g., '1010')"
+            }
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/getWanParameters",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/WanParameterSetting",
+        "parameters": [
+            "action",
+            "module",
+            "wanType",
+            "dnsAuto",
+            "dns1",
+            "dns2",
+            "staticIp",
+            "mask",
+            "gateway",
+            "adslUser",
+            "adslPwd",
+            "vpnServer",
+            "vpnPwd",
+            "vpnWanType"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/WifiPowerGet",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/WifiPowerSet",
+        "parameters": [
+            "power",
+            "power_5g"
+        ]
+    },
+    {
+        "method": "POST",
+        "url": "/goform/refreshDLNA",
+        "parameters": [
+            "action"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/GetDlnaCfg",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/SetDlnaCfg",
+        "parameters": [
+            "dlnaEn",
+            "deviceName",
+            "scanList"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/expandDlnaFile",
+        "parameters": [
+            "folderGrade",
+            "filePath"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/GetDhcpServer",
+        "parameters": [
+            "Math.random()"
+        ]
+    },
+    {
+        "method": "POST",
+        "url": "goform/DhcpSetSer",
+        "parameters": [
+            "dhcpEn",
+            "startIp",
+            "endIp",
+            "lease"
+        ]
+    },
+    {
+        "method": "POST",
+        "url": "goform/InsertWhite",
+        "parameters": [
+            "mac",
+            "domain"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/GetUSBStatus",
+        "parameters": []
+    },
+    {
+        "method": "GET",
+        "url": "goform/GetVpnStatus",
+        "parameters": []
+    },
+    {
+        "method": "GET",
+        "url": "goform/GetAdvanceStatus",
+        "parameters": []
+    },
+    {
+        "method": "GET",
+        "url": "goform/GetSysStatus",
+        "parameters": []
+    },
+    {
+        "method": "GET",
+        "url": "goform/GetWrlStatus",
+        "parameters": []
+    },
+    {
+        "method": "GET",
+        "url": "goform/getProduct",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "/login/Auth",
+        "parameters": [
+            "username",
+            "password"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/GetNetErrInfo",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/NoNotify",
+        "parameters": [
+            "no-notify=true"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/getBlackRuleList",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/delBlackRule",
+        "parameters": [
+            "mac"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/GetPptpServerCfg",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/SetPptpServerCfg",
+        "parameters": [
+            "serverEn",
+            "startIp",
+            "endIp",
+            "mppe",
+            "mppeOp"
+        ]
+    },
+    {
+        "method": "POST",
+        "url": "goform/setPptpUserList",
+        "parameters": [
+            "list"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/GetPrinterCfg",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/SetPrinterCfg",
+        "parameters": [
+            "printerEn"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/GetRemoteWebCfg",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/SetRemoteWebCfg",
+        "parameters": [
+            "remoteWebEn",
+            "remoteIp",
+            "remotePort"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/PowerSaveGet",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/PowerSaveSet",
+        "parameters": [
+            "powerSavingEn",
+            "time",
+            "ledCloseType",
+            "powerSaveDelay"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/WifiBeamformingGet",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/WifiBeamformingSet",
+        "parameters": [
+            "beamformingEn"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/AdvGetMacMtuWan",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/AdvSetMacMtuWan",
+        "parameters": [
+            "wanMTU",
+            "wanSpeed",
+            "cloneType",
+            "mac",
+            "serviceName",
+            "serverName",
+            "wanMTU2",
+            "wanSpeed2",
+            "cloneType2",
+            "mac2"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/GetSysAutoRebbotCfg",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/SetSysAutoRebbotCfg",
+        "parameters": [
+            "autoRebootEn",
+            "delayRebootEn",
+            "rebootTime"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/getOnlineList",
+        "parameters": []
+    },
+    {
+        "method": "GET",
+        "url": "goform/getBlackRuleList",
+        "parameters": []
+    },
+    {
+        "method": "GET",
+        "url": "goform/initSchedWifi",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/openSchedWifi",
+        "parameters": [
+            "schedWifiEnable",
+            "schedStartTime",
+            "schedEndTime",
+            "timeType",
+            "day"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/GetDMZCfg",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/SetDMZCfg",
+        "parameters": [
+            {
+                "name": "dmzEn",
+                "value": "1 or 0"
+            },
+            {
+                "name": "dmzIp",
+                "value": "IP address"
+            }
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/getThundercfg",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/setThundercfg",
+        "parameters": [
+            "thunderEn",
+            "action"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/getParentalRuleList",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/SetOnlineDevName",
+        "parameters": [
+            "devName",
+            "mac"
+        ]
+    },
+    {
+        "method": "POST",
+        "url": "goform/saveParentControlInfo",
+        "parameters": [
+            "deviceId",
+            "deviceName",
+            "enable",
+            "time",
+            "url_enable",
+            "urls",
+            "day",
+            "limit_type"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/GetParentControlInfo",
+        "parameters": [
+            "mac",
+            "random"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/GetSysTimeCfg",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/SetSysTimeCfg",
+        "parameters": [
+            {
+                "name": "timePeriod",
+                "source": "initObj.timePeriod"
+            },
+            {
+                "name": "ntpServer",
+                "source": "initObj.ntpServer"
+            },
+            {
+                "name": "timeZone",
+                "source": "$(\"#timeZone\").val()"
+            }
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/WifiBasicGet",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/WifiBasicSet",
+        "parameters": [
+            "wrlEn",
+            "wrlEn_5g",
+            "security",
+            "security_5g",
+            "ssid",
+            "ssid_5g",
+            "hideSsid",
+            "hideSsid_5g",
+            "wrlPwd",
+            "wrlPwd_5g"
+        ]
+    },
+    {
+        "method": "POST",
+        "url": "goform/WifiWpsStart",
+        "parameters": [
+            "action=wps"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/WifiWpsGet",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/WifiWpsSet",
+        "parameters": [
+            "wpsEn={value}"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/getApModeCfg",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/setApModeCfg",
+        "parameters": [
+            "apModeEn"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/GetIPTVCfg",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/SetIPTVCfg",
+        "parameters": [
+            {
+                "name": "stbEn",
+                "value": "from #stbEn"
+            },
+            {
+                "name": "igmpEn",
+                "value": "from #igmpEn"
+            },
+            {
+                "name": "iptvType",
+                "value": "from #iptvType"
+            },
+            {
+                "name": "vlanId",
+                "value": "from selected VLAN input or areaVlan radio"
+            },
+            {
+                "name": "list",
+                "value": "comma-separated VLAN IDs from #vlanBody inputs"
+            }
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/SysToolReboot",
+        "parameters": [
+            {
+                "name": "random",
+                "value": "Math.random()"
+            }
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/GetPptpClientCfg",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/SetPptpClientCfg",
+        "parameters": [
+            "clientEn",
+            "clientType",
+            "clientMppe",
+            "clientMppeOp",
+            "domain",
+            "userName",
+            "password"
+        ]
+    },
+    {
+        "method": "GET",
+        "url": "goform/GetPptpClientCfg",
+        "parameters": []
+    },
+    {
+        "method": "GET",
+        "url": "goform/GetUpnpCfg",
+        "parameters": []
+    },
+    {
+        "method": "POST",
+        "url": "goform/SetUpnpCfg",
+        "parameters": [
+            "upnpEn"
+        ]
+    }
+]

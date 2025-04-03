@@ -38,5 +38,5 @@ fuzzer = Fuzzer(
     sample_constraint_model_path="./ac9.json",
     fuzz_http_message_template=tenda_ac9_fuzz_template,
 )
-# fuzzer.fuzz()
-fuzzer.only_receive_udp_data()
+fuzzer.fuzz()
+# fuzzer.only_receive_udp_data()
